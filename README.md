@@ -48,6 +48,9 @@ The following arguments are supported:
 - `script`(string): This is a path (relative or absolute) to a local script that will be copied to the remote resource and then executed. This cannot be provided with `inline` or `scripts`.
 - `scripts`(list of string): This is a list of paths (relative or absolute) to local scripts that will be copied to the remote resource and then executed. They are executed in the order they are provided. This cannot be provided with `inline` or `script`.
 
+Specify a script in the form of Packer's boot_command for `inline`/`script`/`scripts`.
+For details, please refer to https://www.packer.io/docs/builders/qemu.html#boot-command.
+
 ## License
 
  `terraform-provisioner-vnc` Copyright (C) 2019 Kazumichi Yamamoto.
